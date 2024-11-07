@@ -1,33 +1,62 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PamonhaFlix</title>
+    <title>Cine&Séries - Página Inicial</title>
+    <link rel="warzone" href="style.css">
 </head>
 <body>
-    <h1>Catalogo</h1>
-        <p>Os melhores para adoçar a vida!</p>
-    <h2>sobrenatural</h2>
-        <p>uma serie que conta a vida de dois irmaos que cacam coisas sobrenaturais,recomendacao pra 18 anos e terror</p>
-    <h3>novatos</h3>
-        <p>e um file que conta a historia de 4 adolecentes que estao na faze da pubertade eles vao em uma festa de comeco de ano e assim comeca o fime,classificao 16 anos</p>
-    <h4>gente grande</h4>    
-        <p>e um filme de comedia onde conta a historia de pessoas adultas que de reencontram apos o funeral de seu treinador assim comeca a historia,indicacao livre</p>
-    <h5> a libertacao</h5>    
-        <p>e um filme de terror que conta historia de um faminlia pertubada que o mal aproveita para possuir seus filhos,classificacao 18 anos</p>
-    <h6>cidade de Deus</h6>    
-        <p>e um fime brasileira que conta a historia das favelas brasileira conta sobre o dia dia de um morador da favela sobre assaltos e motes, indicacao 18 anos </p>
-    <h7>cobra kai</h7>
-        <p>e uma serie de drama e comedia envolve lutas como karate e etc,classificacao 12 anos</p>
-    <h8>fim do mundo </h8>   
-        <p>conta a historia de 3 adolecentes que sobrevive em um mundo em que alieniginas invadiram a terra,classificao 14 anos  e drama</p>
-    <h9>pixels</h9>
-        <p>e um filme de comedia que conta historia de um jogo que virou realidade assim 3 amighos lutan comtram cada jogo para salvar a terra,classificao livre p. 
-    <h10>vikins</h10>
-        <p>e uma serie que conta a epoca antiga fala sobre a historia dos vikins e como era as guerras na quele ano,classificacao 18 anos</p>
-    <h11>sitonia</h11>
-        <p>conta a historia de tre amigos que vao para vida de crime so que com o tempo uma vira da igreja e ou outro vira cantor e o ultimo amigo ficou no mundo do crime,classificacao 16 anos e uma serie </p>
-         
+
+    <!-- Cabeçalho do Site -->
+    <header>
+        <h1>warzone</h1>
+        <p>Bem-vindo ao nosso site god warzone </p>
+        <!-- Barra de Pesquisa -->
+        <input type="text" id="searchInput" placeholder="Buscar filmes e séries..." onkeyup="searchMovies()">
+    </header>
+
+    <!-- Barra de Navegação -->
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="categorias.html">Categorias</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <div class="container">
+        <h2>Últimos Lançamentos</h2>
+        <div class="movie-list" id="movieList">
+            <!-- Card do Filme 1 -->
+            <div class="movie-item">
+                <img src="https://via.placeholder.com/200x300" alt="Poster do Filme 1">
+                <h3>sobrenatural</h3>
+                <p> historia de dois irmaos qucacam coisas sobrenaturais, terror</p>
+                <p>2005</p>
+            </div>
+            <!-- Card do Filme 2 -->
+            <div class="movie-item">
+                <img src="https://via.placeholder.com/200x300" alt="Poster do Filme 2">
+                <h3>corte do tempo</h3>
+                <p>uma adolecente volta pro passado pra salvar sua irma que iria morrer por um assasino, Suspense</p>
+                <p>2024</p>
+            </div>
+            <!-- Card do Filme 3 -->
+            <div class="movie-item">
+                <img src="https://via.placeholder.com/200x300" alt="Poster do Série 1">
+                <h3>cobra kai</h3>
+                <p>conta historia do filme karate kit,Comédia</p>
+                <p>6ª Temporada</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2023 Cine&Séries. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
